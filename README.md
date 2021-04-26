@@ -1,7 +1,7 @@
 
 # Print Kicker
 
-[Download Package](https://github.com/c0der4t/printkicker/blob/master/bin/IQPrinterKicker_Version1.2.exe)
+[Download Package](https://github.com/c0der4t/printkicker/releases/tag/1.2)
 
 ![GitHub](https://img.shields.io/github/license/c0der4t/printkicker?style=for-the-badge)
 
