@@ -8,6 +8,8 @@
 Interface that calls the kick command on a printer with the given kick string.
 
 Use with command line calls to integrate into existing software or use as a standalone testing utility
+
+
 ## Features
 
 - Supports command line calls
@@ -19,6 +21,8 @@ Use with command line calls to integrate into existing software or use as a stan
   
 ## Usage/Examples
 
+### Command Line
+
 The command line call accepts 3 arguments:
 
 - Full Printer Name of Target Printer
@@ -27,7 +31,6 @@ The command line call accepts 3 arguments:
 
 If arg #3 is set to 'debug' additional pop ups will appear while the interface processes requests to assist with testing and setup
 
-### Command Line
 
 #### Structure
 ```batch
@@ -36,7 +39,12 @@ powershell start-process ''exePath'' -ArgumentList {"""printername"""; "kickstri
 
 #### Full Example
 ```batch
-powershell start-process ''exePath'' -ArgumentList {"""EPSON Slip (redirected 257)"""; "027-112-048-055-121"; "debug"} -WindowStyle Hidden
+powershell start-process ''C:\Users\Public\Documents\IQPrinterKicker\IQPrinterKicker.exe'' -ArgumentList {"""EPSON Slip (redirected 257)"""; "027-112-048-055-121"; "debug"} -WindowStyle Hidden
+```
+
+#### Full Example (no debug)
+```batch
+powershell start-process ''C:\Users\Public\Documents\IQPrinterKicker\IQPrinterKicker.exe'' -ArgumentList {"""EPSON Slip (redirected 257)"""; "027-112-048-055-121"; ""} -WindowStyle Hidden
 ```
 
 
