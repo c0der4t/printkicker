@@ -1,0 +1,12 @@
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\bin\Debug\IQPrinterKicker.exe.config
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\bin\Debug\IQPrinterKicker.exe
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\bin\Debug\IQPrinterKicker.pdb
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.csprojAssemblyReference.cache
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.frmMain.resources
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.Properties.Resources.resources
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.csproj.GenerateResource.cache
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.csproj.CoreCompileInputs.cache
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.exe
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.pdb
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\bin\Debug\RawPrint.dll
+C:\Users\monte\Documents\Software\C#\IQPrinterKicker\obj\Debug\IQPrinterKicker.csproj.CopyComplete
