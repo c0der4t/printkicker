@@ -3,7 +3,8 @@
 
 [Download Package](url)
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/c0der4t/printkicker?color=purple&label=Repo%20Size&style=for-the-badge)|  ![GitHub](https://img.shields.io/github/license/c0der4t/printerkicker?style=for-the-badge)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/c0der4t/printkicker?color=purple&label=Repo%20Size&style=for-the-badge)|  ![GitHub](https://img.shields.io/github/license/c0der4t/printkicker?style=for-the-badge)
 :-------------------------:|:-------------------------:
 
 Interface that calls the kick command on a printer with the given kick string.
