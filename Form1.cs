@@ -128,6 +128,8 @@ namespace IQPrinterKicker
 
         private void SendPrinterKick(string PrinterName,string KickString,bool isTest=false)
         {
+            string RandomFileName = "";
+
             try
             {
 
@@ -171,7 +173,10 @@ namespace IQPrinterKicker
 
                 #region Prepare printer file/command file
 
-                using (StreamWriter TempFile = new StreamWriter(Path.Combine(Application.StartupPath, "temp.txt")))
+                Random RandomEngine = new Random();
+                RandomFileName = RandomEngine.Next(1,99999).ToString() + ".txt";
+
+                using (StreamWriter TempFile = new StreamWriter(Path.Combine(Application.StartupPath, RandomFileName)))
                 {
                     TempFile.WriteLine(System.Text.ASCIIEncoding.ASCII.GetString(new byte[] { KickBytes[0], KickBytes[1], KickBytes[2], KickBytes[3], KickBytes[4] }));
                 }
@@ -184,7 +189,7 @@ namespace IQPrinterKicker
                 IPrinter printer = new Printer();
 
                 // Print the file
-                printer.PrintRawFile(PrinterName, Path.Combine(Application.StartupPath, "temp.txt"), "temp.txt");
+                printer.PrintRawFile(PrinterName, Path.Combine(Application.StartupPath, RandomFileName), RandomFileName);
                 DebugMessage("Kick command sent");
                 #endregion
 
@@ -194,14 +199,14 @@ namespace IQPrinterKicker
                 MessageBox.Show(exPrintError.ToString(),Application.ProductName,MessageBoxButtons.OK,MessageBoxIcon.Error);
 
                 //We ensure to remove residue files after processing requests
-                File.Delete(Path.Combine(Application.StartupPath, "temp.txt"));
+                File.Delete(Path.Combine(Application.StartupPath, RandomFileName));
 
                 return;
             }
             finally
             {
                 //We ensure to remove residue files after processing requests
-                File.Delete(Path.Combine(Application.StartupPath, "temp.txt"));
+                File.Delete(Path.Combine(Application.StartupPath, RandomFileName));
 
                 //If this is a UI test, give the user visual feedback
                 if (isTest)
