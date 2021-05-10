@@ -116,7 +116,7 @@ end;
   
 ## Contributing
 
-Contributions are always welcome!
+Contributions are always welcome 🙂
 
   
 ## Authors
